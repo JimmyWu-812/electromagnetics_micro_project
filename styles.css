@@ -174,6 +174,9 @@ a:focus {
 
 /* Make images easier to work with */
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
   height: auto;
   display: block;
@@ -511,33 +514,39 @@ input.sidenote-toggle {
 
 /* Heading typography */
 h1 {
+  text-align: center;
   font-size: 2.5rem;
   line-height: 3.25rem;
   margin-bottom: 1.625rem;
 }
 
 h2 {
+  text-align: center;
   font-size: 1.7rem;
   line-height: 2rem;
   margin-top: 3rem;
 }
 
 h3 {
+  text-align: center;
   font-size: 1.4rem;
   margin-top: 2.5rem;
 }
 
 h4 {
+  text-align: center;
   font-size: 1.2rem;
   margin-top: 2rem;
 }
 
 h5 {
+  text-align: center;
   font-size: 1rem;
   margin-top: 1.8rem;
 }
 
 h6 {
+  text-align: center;
   font-size: 1rem;
   font-style: italic;
   font-weight: normal;
@@ -571,4 +580,11 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.8rem;
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }

@@ -6,32 +6,47 @@
         <title>EMdemo: Phase Velocity and Group Velocity</title>
     </head>
     <body bgcolor="#ffffff">
-        <center><h1>Phase Velocity and Group Velocity</h1></center>
-        <center><h5>Editor: Jia-Ren Joshua Nieh, Zhong-Han Jimmy Wu</h5></center>
-        <center><h5>Advisor: Jean-Fu Jeff Kiang</h5></center>
+        <h2>Phase Velocity and Group Velocity</h2>
+        <h5>Editor: Jia-Ren Joshua Nieh, Zhong-Han Jimmy Wu</h5>
+        <h5>Advisor: Professor Jean-Fu Jeff Kiang</h5>
         <div>
-            <center><h3>1. Phase Velocity</h3></center>
+            <h3>1. Phase Velocity</h3>
             <p>
                 In general, a wave propagating in +z direction can be described by a wave function:
                 \[\Psi(t,z) = g(\omega t-\beta z)\]
-            </p>
-            <p>
-                When we look at a wave, we would observe the constant phase and view it as the phase velocity.
+                When we look at a wave, we would observe the constant phase and sense it moving in the phase velocity.
                 \[\omega t-\beta z = \text{const.}\]
                 \[\omega -\beta \frac{dz}{dt} = 0\Rightarrow v_p = \frac{dz}{dt} = \frac{\omega}{\beta}\]
             </p>
         </div>
         <div>
-            <center><h3>2. Group Velocity</h3></center>
-            <p>In general, a propagating wave in the +z direction can be written as:</p>
+            <h3>2. Group Velocity</h3>
+            <p>
+                In the figure below, when the two waves align, we would sense it moving in the group velocity.
+                <img src="1.png" alt="" width="650">
+                \[\begin{cases}
+                \lambda _A + \Delta z = v_{pA}\Delta t\\
+                \lambda _B + \Delta z = v_{pB}\Delta t
+                \end{cases}\Rightarrow\Delta t = \frac{\lambda_A - \lambda_B}{v_{pA} - v_{pB}},~\Delta z = \frac{\lambda_A v_{pB} - \lambda_B v_{pA}}{v_{pA} - v_{pB}}\]
+                \[\Rightarrow v_g = \frac{\Delta z}{\Delta t} = \frac{\lambda_A v_{pB} - \lambda_B v_{pA}}{\lambda_A - \lambda_B} = \frac{\omega_B - \omega_A}{\beta_B - \beta_A}\]
+                In the narrow-band case,
+                \[v_g = \frac{d\omega}{d\beta}\]
+                Graph \(\omega\)-\(\beta_z\) for a parallel-plate metalic waveguide.
+                The slope of the graph at a given \(\beta_z\) is the group velocity \(=\frac{d\omega}{d\beta_z}\) and the slope of the line passing origin at a given \(\beta\) is the phase velocity \(=\frac{\omega}{\beta_z}\)
+                <img src="2.png" alt="" width="650">
+            </p>
         </div>
-        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="550" height="500" align="middle">
-            <param name="allowScriptAccess" value="sameDomain" />
-            <param name="movie" value="EMdemo.swf" />
-            <param name="quality" value="high" />
-            <param name="bgcolor" value="#ffffff" />
-            <br />
-            <center><video width="640" height="480" src="EMdemo.mp4" controls></center>
-        </object>
+        <div>
+            <h3>3. Demo Video</h3>
+            <p>
+                Parameters in the demo video:
+                \[E_0=1,~m=0.1,~\omega=10\pi,~\Delta\omega=\pi,~\beta=1,~\Delta\beta=0.15\]
+            </p>
+            <video width="650" src="EMdemo.mp4" controls>
+        </div>
+        <br />
+        <footer>
+            Ref: Nannapaneni Narayana Rao, “Elements of Engineering Electromagnetics,” Sixth Edition, 2004 (Prentice Hall, Inc.).
+        </footer>
     </body>
 </html>
