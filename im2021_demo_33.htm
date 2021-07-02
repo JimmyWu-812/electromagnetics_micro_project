@@ -30,7 +30,7 @@
                 \end{cases}\Rightarrow\Delta t = \frac{\lambda_{gA} - \lambda_{gB}}{v_{pzA} - v_{pzB}},~\Delta z = \frac{\lambda_{gA} v_{pzB} - \lambda_{gB} v_{pzA}}{v_{pzA} - v_{pzB}}\]
                 \[\Rightarrow v_g = \frac{\Delta z}{\Delta t} = \frac{\lambda_{gA} v_{pzB} - \lambda_{gB} v_{pzA}}{\lambda_{gA} - \lambda_{gB}} = \frac{\omega_B - \omega_A}{\beta_{zB} - \beta_{zA}}\]
                 In the narrow-band case,
-                \[v_g = \frac{d\omega}{d\beta}\]
+                \[v_g = \frac{d\omega}{d\beta_z}\]
             </p>
         </div>
         <div>
@@ -42,10 +42,13 @@
             </p>
         </div>
         <div>
-            <h3>4. Example 2: Demo Video - Narrow-band Amplitude Modulation</h3>
+            <h3>4. Example 2: Narrow-band Amplitude Modulation</h3>
             <p>
-                Parameters in the demo video:
-                \[E_0=1,~m=0.1,~\omega=10\pi,~\Delta\omega=\pi,~\beta=1,~\Delta\beta=0.15\]
+                The wave shown in the video has the form:
+                \[E(z,t)=E_0[1+m\cos{(\Delta\omega\cdot t-\Delta\beta_z\cdot z)}]\cos{(\omega t-\beta_zz)}\]
+                where the parameters are:
+                \[E_0=1,~m=0.1,~\omega=10\pi,~\Delta\omega=\pi,~\beta_z=1,~\Delta\beta_z=0.15\]
+                The velocity at which the high-frequency wave moves is the phase velocity \(=\omega/\beta_z\), while the the envelope moves at group velocity \(=\Delta\omega/\Delta\beta_z\) .
             </p>
             <video width="650" src="EMdemo.mp4" controls>
         </div>
